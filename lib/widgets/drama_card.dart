@@ -6,6 +6,7 @@ class DramaCard extends StatelessWidget {
   final VoidCallback onTap;
 
   const DramaCard({
+    super.key,
     required this.drama,
     required this.onTap,
   });
@@ -17,7 +18,7 @@ class DramaCard extends StatelessWidget {
       child: Card(
         elevation: 4,
         margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-        child: Container(
+        child: SizedBox(
           height: 120,
           child: Row(
             children: [

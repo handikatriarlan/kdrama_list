@@ -4,7 +4,7 @@ import '../models/drama.dart';
 class DramaDetailPage extends StatelessWidget {
   final Drama drama;
 
-  const DramaDetailPage({required this.drama});
+  const DramaDetailPage({super.key, required this.drama});
 
   @override
   Widget build(BuildContext context) {
